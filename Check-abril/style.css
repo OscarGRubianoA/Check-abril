@@ -52,7 +52,7 @@ nav a{
 } 
 section{
     height: 18rem;
-    width: 22rem;
+    width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,3 +91,83 @@ footer{
 footer a{
     color: black;
 }
+@media only screen and (max-width: 780px) and (min-width: 700px){
+    
+    main>div>nav{
+        width: 13rem;
+    }
+}
+ @media only screen and (max-width: 699px) and (min-width: 660px){
+    
+    main>div>nav{
+        width: 10rem;
+    }
+    .active{
+        width: 100%;
+    }
+} 
+@media only screen and (max-width: 659px) and (min-width: 600px){
+    main>div>nav{
+        width: 7rem
+
+        
+    }
+}
+@media only screen and (max-width: 599px) and (min-width: 490px){
+    main{
+        min-height: 70vh;
+        flex-direction: column;
+    }
+    main>div>nav{
+        width: 100%;
+        height: 10vh;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 489px) and (min-width: 300px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    header h1{
+        font-size: 1rem;
+    }
+    main{
+        min-height: 70vh;
+        flex-direction: column;
+    }
+    main>div>nav{
+        width: 100%;
+        height: 10vh;
+        flex-direction: row;
+        font-size: .9rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    section{
+        width:25rem;
+        max-height: 8rem;
+        flex-direction: row;
+        border: 1px solid black;
+    }
+    section img{
+        width:33%;
+        height: 100%;
+    }
+    section h4,ul{
+        width:66%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section ul{
+        margin-bottom: 0;
+    }
+    footer{
+        min-height: 9.5rem;
+    }
+}
+
