@@ -124,7 +124,7 @@ footer a{
         flex-direction: row;
     }
 }
-@media only screen and (max-width: 489px) and (min-width: 300px){
+@media only screen and (max-width: 489px) and (min-width: 370px){
     header{
         width: 100%;
         display: flex;
@@ -133,8 +133,11 @@ footer a{
     header h1{
         font-size: 1rem;
     }
+    nav a{
+        font-size: .8rem;
+    }
     main{
-        min-height: 70vh;
+        height: 30rem;
         flex-direction: column;
     }
     main>div>nav{
@@ -147,14 +150,16 @@ footer a{
         flex-direction: column;
     }
     section{
-        width:25rem;
+        width:23rem;
         max-height: 8rem;
         flex-direction: row;
         border: 1px solid black;
+        border: none;
     }
     section img{
         width:33%;
         height: 100%;
+        border-radius:  .5rem 0 0 .5rem;
     }
     section h4,ul{
         width:66%;
@@ -165,9 +170,18 @@ footer a{
     }
     section ul{
         margin-bottom: 0;
+        border-radius: 0  .5rem .5rem 0;
+        font-size: .7rem;
     }
     footer{
-        min-height: 9.5rem;
+        max-height: 9.5rem;
+        min-width: 100%;
+        font-size: .7rem;
+        justify-content: space-evenly;
+        gap: 1px;
+    }
+    footer>form{
+        width: 14rem;
     }
 }
 
