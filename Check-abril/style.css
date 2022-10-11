@@ -184,4 +184,68 @@ footer a{
         width: 14rem;
     }
 }
+    @media only screen and (max-width: 369px) and (min-width: 320px){
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        header h1{
+            font-size: 1rem;
+        }
+        nav a{
+            font-size: .8rem;
+        }
+        main{
+            height: 30rem;
+            flex-direction: column;
+        }
+        main>div>nav{
+            width: 100%;
+            height: 10vh;
+            flex-direction: row;
+            font-size: .9rem;
+        }
+        .container{
+            flex-direction: column;
+        }
+        section{
+            width:19rem;
+            max-height: 8rem;
+            flex-direction: row;
+            border: 1px solid black;
+            border: none;
+        }
+        section img{
+            width:33%;
+            height: 100%;
+            border-radius:  .5rem 0 0 .5rem;
+        }
+        section h4,ul{
+            width:66%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section ul{
+            margin-bottom: 0;
+            border-radius: 0  .5rem .5rem 0;
+            font-size: .5rem;
+        }
+        footer{
+            max-height: 9.5rem;
+            min-width: 100%;
+            font-size: .5rem;
+            justify-content: space-evenly;
+            gap: 1px;
+        }
+        footer>form{
+            width: 14rem;
+        }
+        footer input{
+            font-size: .6rem;
+        }
+    }
+
 
